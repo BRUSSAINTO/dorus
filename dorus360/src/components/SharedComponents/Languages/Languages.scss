@@ -1,0 +1,28 @@
+.languages {
+    display: flex;
+    align-items: center;
+    width: 100px;
+}
+
+.languages__button {
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+    cursor: pointer;
+    &:nth-last-child(n+2) {
+        border-right: 1px solid #FFFFFF
+    }
+    &:hover {
+        color: #4D94A2
+    }
+}
+
+.languages__button_active {
+    color: #4D94A2
+}

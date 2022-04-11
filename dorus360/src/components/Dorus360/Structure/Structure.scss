@@ -1,0 +1,387 @@
+.structure {
+    min-height: 117vh;
+    width: 100%;
+    background: linear-gradient(180deg, #00042E 0%, #003372 100%);
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.structure__logo {
+    position: absolute;
+    top: 277px;
+    left: calc(50% - 310px/2);
+    width: 352px;
+    height: 365px;
+    background: url(../../../images/structure/logo.svg);
+}
+
+.structure__image-container {
+    width: 239px;
+    height: 213px;
+    margin: 341px 0 0 0;
+}
+
+.structure__computer-image {
+    width: 100%;
+    border-radius: 50%;
+    opacity: 0.7;
+    &::after {
+        content: "";
+        box-sizing: border-box;
+        position: absolute;
+        top: calc(50% - 150px/2);
+        left: calc(50% - 150px/2);
+        width: 150px;
+        height: 150px;
+        background-color: transparent;
+        box-shadow: 0 0 25px 25px rgba(0, 4, 46, 0.2);
+        border-radius: 50%;
+        z-index: 1;
+    }
+}
+
+.structure__line-left {
+    position: absolute;
+    background: url(../../../images/structure/lineLeft.svg);
+    width: 84px;
+    height: 145px;
+}
+
+.structure__line-right {
+    position: absolute;
+    background: url(../../../images/structure/lineRight.svg);
+    width: 52px;
+    height: 145px;
+}
+
+.structure__line-left-top {
+    top: 100px;
+    left: 365px;
+}
+
+.structure__line-left-bottom {
+    transform: scale(-1, 1) rotate(180deg);
+    top: -70px;
+    left: 365px;
+}
+
+.structure__line-right-top {
+    top: 100px;
+    right: 365px;
+}
+
+.structure__line-right-bottom {
+    transform: scale(-1, 1) rotate(180deg);
+    top: -70px;
+    right: 365px;
+}
+
+.structure__point {
+    position: absolute;
+    background: url(../../../images/structure/point.svg);
+    width: 22px;
+    height: 22px;
+}
+
+.structure__point_top-left {
+    top: 90px;
+    left: 350px;
+}
+
+.structure__point_top-right {
+    top: 90px;
+    right: 350px;
+}
+
+.structure__point_bottom-left {
+    top: 63px;
+    left: 350px;
+}
+
+.structure__point_bottom-right {
+    top: 63px;
+    right: 350px;
+}
+
+.structure__container {
+    display: flex;
+    justify-content: center;
+    width: $width-content;
+}
+
+.structure__block-left {
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 40px;
+}
+
+.structure__block-right {
+    position: relative;
+    width: 395px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+
+.structure__module {
+    position: relative;
+    box-sizing: border-box;
+    width: 335px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 25px 30px 25px;
+    background: linear-gradient(90.08deg, rgba(0, 255, 255, 0.2) 0.1%, rgba(0, 34, 93, 0.2) 99.97%);
+    backdrop-filter: blur(11px);
+}
+
+.structure__module_small {
+    position: relative;
+    box-sizing: border-box;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 12px 28px;
+    background: linear-gradient(90.08deg, rgba(0, 255, 255, 0.2) 0.1%, rgba(0, 34, 93, 0.2) 99.97%);
+    backdrop-filter: blur(11px);
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.structure__module-title {
+    margin: 0;
+    padding: 0;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+.structure__module-paragraph {
+    margin: 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.structure__module-brokerage {
+    position: relative;
+    margin: 111px 0 0 auto;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -10px;
+        right: -30px;
+        width: 50px;
+        height: 52px;
+        background-image: url(../../../images/structure/brokerage.svg);
+        background-position: center;
+    }
+}
+
+.structure__module-custodian {
+    margin: 39px 0;
+}
+
+.structure__module-digital {
+    margin-left: 65px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -15px;
+        left: -35px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../images/structure/digital.svg);
+        background-position: center;
+    }
+}
+
+.structure__module-fund {
+    margin: 63px 0 28px 0;
+}
+
+.structure__module-mobile {
+    margin-left: auto;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        left: -35px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../images/structure/mobile.svg);
+        background-position: center;
+    }
+}
+
+.structure__module-wealth {
+    position: absolute;
+    top: 130px;
+    left: -50px;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        left: -40px;
+        width: 50px;
+        height: 53px;
+        background-image: url(../../../images/structure/wealthManagment.svg);
+        background-position: center;
+    }
+}
+
+.structure__module-dma {
+    margin: 195px 0 51px auto;
+}
+
+.structure__module-sales {
+    align-self: center;
+    &::after {
+        content: "";
+        position: absolute;
+        top: -30px;
+        right: -25px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../images/structure/sales.svg);
+        background-position: center;
+    }
+}
+
+.structure__module-investment {
+    margin: 51px 0 34px auto;
+}
+
+.structure__module-crm {
+    margin-left: 90px;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        right: -40px;
+        width: 50px;
+        height: 50px;
+        background-image: url(../../../images/structure/crm.svg);
+        background-position: center;
+    }
+}
+
+@media (max-width:1279px) {
+    .structure__block-left {
+        width: 241px;
+        display: flex;
+        align-items: center;
+        margin: 0;
+    }
+    .structure__image-container {
+        margin: 10px 0 0 0;
+    }
+    .structure__module {
+        width: 100%;
+        padding: 20px 9px 20px 14px;
+    }
+    .structure__module-crm {
+        margin: 35px 0 0 0;
+        &::after {
+            top: 0px;
+            right: -40px;
+        }
+    }
+    .structure__module-dma {
+        padding: 20px 20px;
+        margin: 30px 0 30px 0;
+    }
+    .structure__module-brokerage {
+        margin: 0;
+        align-self: flex-start;
+    }
+    .structure__module-custodian {
+        margin: 30px 0;
+    }
+    .structure__module-wealth {
+        position: static;
+        align-self: flex-start;
+        width: 216px;
+        &::after {
+            top: 0;
+            left: 186px;
+        }
+    }
+    .structure__module-fund {
+        margin: 30px 0 47px 0;
+        padding-bottom: 41px;
+    }
+    .structure__module-digital {
+        margin: 0;
+        align-self: flex-end;
+    }
+    .structure__module-investment {
+        margin: 30px 0 59px 0;
+        padding-bottom: 41px;
+    }
+    .structure__module-sales {
+        margin: 0 0 30px 0;
+    }
+    .structure__module-mobile {
+        margin: 0 0 103px 0;
+    }
+    .structure__line-left {
+        position: absolute;
+        background: none;
+    }
+    .structure__line-right {
+        position: absolute;
+        background: none;
+    }
+    .structure__line-left-top {
+        background: url("../../../images/structure/lineTopLeft.svg");
+        top: -150px;
+        left: -15px;
+        width: 46px;
+        height: 252px;
+    }
+    .structure__point_top-left {
+        top: 100px;
+        left: -25px;
+    }
+    .structure__line-left-bottom {
+        transform: none;
+        background: url("../../../images/structure/lineBottomLeft.svg");
+        top: -895px;
+        left: -28px;
+        width: 72px;
+        height: 1006px;
+    }
+    .structure__point_bottom-left {
+        top: 100px;
+        left: -35px;
+    }
+    .structure__line-right-top {
+        background: url("../../../images/structure/lineTopRight.svg");
+        top: -490px;
+        right: -15px;
+        width: 33px;
+        height: 621px;
+    }
+    .structure__point_top-right {
+        top: 110px;
+        right: -25px;
+    }
+    .structure__line-right-bottom {
+        transform: none;
+        background: url("../../../images/structure/lineBottomRight.svg");
+        top: -1315px;
+        right: -28px;
+        width: 56px;
+        height: 1487px;
+    }
+    .structure__point_bottom-right {
+        top: 160px;
+        right: -35px;
+    }
+    .structure__module-mobile {
+        align-self: flex-end;
+    }
+}

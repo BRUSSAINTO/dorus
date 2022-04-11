@@ -1,0 +1,12 @@
+$primary-color:#00C0B4;
+$dark-color-text:#281C51;
+$width-content:77%;
+@import './fonts/fonts.scss';
+@import './vendor/normalize.css';
+@import './components/App/App.scss';
+@import './components/SharedComponents/Header/Header.scss';
+@import './components/SharedComponents/Navigation/Navigation.scss';
+@import './components/SharedComponents/Languages/Languages.scss';
+@import './components/SharedComponents/CustomButton/CustomButton.scss';
+@import './components/SharedComponents/Footer/Footer.scss';
+@import './components/Dorus360/Dorus360.scss';

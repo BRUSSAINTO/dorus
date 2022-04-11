@@ -1,0 +1,213 @@
+.contactUs {
+    display: flex;
+    padding: 75px 0 100px 0;
+    width: 100%;
+    justify-content: center;
+}
+
+.contactUs__image-container {
+    max-width: 699px;
+    max-height: 610px;
+}
+
+.contactUs__image {
+    width: 100%;
+    height: 100%;
+}
+
+.contactUs__form-container {
+    margin-right: 11%;
+    position: relative;
+    width: 539px;
+    max-width: 539px;
+}
+
+.contactUs__form {
+    position: absolute;
+    top: -129px;
+    left: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 20px 50px rgba(38, 200, 238, 0.502);
+    border-radius: 25px;
+    background-color: white;
+}
+
+.contactUs__form-content {
+    margin: 0 auto;
+    width: 76.5%;
+    min-width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.contactUs__form-title {
+    margin: 32px 0 20px 0;
+    color: $dark-color-text;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 68px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.contactUs__form-input {
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
+    padding: 16.3px 22px 13.6px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    color: #1C164B;
+    border: 2px solid transparent;
+    background: linear-gradient(90.08deg, #00C0B4 0.1%, #29C9F3 99.97%);
+    box-shadow: inset 0px 0px 0px 100vw #fff;
+    border-radius: 30px;
+    outline: none;
+    &:nth-last-child(n+2) {
+        margin: 0 0 30px 0;
+    }
+    &:focus {
+        box-shadow: inset 0px 0px 0px 100vw #fff, 0px 0px 25px 2px #29C9F3;
+    }
+}
+
+.contactUs__submit {
+    width: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 2px;
+    padding: 20px 0;
+}
+
+.contactUs__privacy-paragraph {
+    margin: 25px 0 0 0;
+    padding: 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.contactUs__privacy-agree {
+    padding: 0;
+    margin: 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 22px;
+    color: #000000;
+}
+
+.contactUs__privacy-checkbox-container {
+    position: relative;
+    margin: 30px 0 46px 0;
+    display: flex;
+    user-select: none;
+}
+
+.contactUs__privacy-checkbox {
+    margin-right: 17px;
+    width: 20px;
+    height: 20px;
+    z-index: -1;
+    opacity: 0;
+}
+
+.contactUs__privacy-checkbox+label {
+    &::before {
+        content: '';
+        box-sizing: border-box;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 20px;
+        height: 20px;
+        margin-right: 17px;
+        border: 1px solid #00C0B4;
+    }
+}
+
+.contactUs__privacy-checkbox:checked+label::before {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 20px;
+    height: 20px;
+    background-image: url(../../../images/privacyCheck.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+@media (max-width:1279px) {
+    .contactUs {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 56px 0 70px 0;
+    }
+    .contactUs__image {
+        max-width: 699px;
+        max-height: 610px;
+    }
+    .contactUs__form-container {
+        margin: 18px 15px 0;
+        position: relative;
+        width: 90.6%;
+    }
+    .contactUs__form {
+        position: static;
+    }
+    .contactUs__form-title {
+        margin-top: 25px;
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+    .contactUs__form-input {
+        padding: 13px 15px 13px;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        color: #1C164B;
+        &:nth-last-child(n+2) {
+            margin: 0 0 12px 0;
+        }
+    }
+    .contactUs__submit {
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 2px;
+        padding: 13px 0 13px;
+    }
+    .contactUs__privacy-paragraph {
+        margin: 15px 0 0 0;
+        font-size: 12px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .contactUs__privacy-checkbox-container {
+        margin: 16px 0 26px 16px;
+    }
+    .contactUs__privacy-agree {
+        font-size: 12px;
+        line-height: 16px;
+    }
+    .contactUs__privacy-checkbox {
+        margin-right: 15px;
+    }
+    .contactUs__privacy-checkbox+label {
+        &::before {
+            margin-right: 10px;
+        }
+    }
+}

@@ -1,0 +1,26 @@
+        .versatility {
+            width: 100%;
+            background: url(../../../images/versatility.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        
+        .versatility__paragraph {
+            min-height: 230px;
+            max-width: 916px;
+            margin: 100px auto;
+            padding: 0;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 35px;
+            text-align: center;
+        }
+        
+        @media (max-width:994px) {
+            .versatility__paragraph {
+                margin: 67px auto 106px;
+                width: 85%;
+                font-size: 18px;
+            }
+        }

@@ -1,0 +1,19 @@
+    @import "./Intro/intro.scss";
+    @import './Solution/Solution.scss';
+    @import './Structure/Structure.scss';
+    @import './Versatility/Versatility.scss';
+    @import './/ContactUs/ContactUs.scss';
+    .dorus360 {
+        background-image: url(../../images/mainImage.svg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 110vh;
+    }
+    
+    @media (max-width:994px) {
+        .dorus360 {
+            height: 100%;
+        }
+    }

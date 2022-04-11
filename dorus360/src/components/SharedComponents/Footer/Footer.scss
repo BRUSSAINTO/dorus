@@ -1,0 +1,134 @@
+.footer {
+    background-image: url(../../../images/footer.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+}
+
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: $width-content;
+    margin: 97px auto 130px;
+}
+
+.footer__copyright-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.footer__logos-container {
+    display: flex;
+    align-items: center;
+}
+
+.footer__logo {
+    width: 33px;
+    height: 31px;
+    margin: 0 16px 0 0;
+}
+
+.footer__logo-title {
+    width: 112px;
+    height: 19px;
+}
+
+.footer__copyright {
+    position: absolute;
+    bottom: 0;
+    left: -15px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+}
+
+.footer__paragraph {
+    margin: 0;
+    max-width: 55%;
+    min-width: 290px;
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 22px;
+    opacity: 0.75;
+}
+
+.footer__paragraph-decoration {
+    color: #20D6C0;
+    text-decoration: underline;
+    background-color: transparent;
+}
+
+.footer__social-container {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    width: 190px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 37px);
+    column-gap: 14px;
+}
+
+.footer__social-link {
+    display: block;
+    box-sizing: border-box;
+    width: 37px;
+    height: 37px;
+    padding: 8px;
+    border-radius: 50%;
+    border: 1px solid #00C0B4;
+    transition: 0.3s;
+}
+
+.footer__social-link:hover {
+    opacity: 0.7;
+}
+
+.footer__social-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+}
+
+@media (max-width:1260px) {
+    .footer__logos-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .footer__logo {
+        margin: 0 0 16px 0
+    }
+}
+
+@media (max-width:994px) {
+    .footer__container {
+        flex-direction: column;
+        margin: 0 auto;
+        align-items: center;
+    }
+    .footer__logos-container {
+        margin: 40px 0 0 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .footer__logo {
+        margin: 0 16px 0 0
+    }
+    .footer__social-container {
+        display: none;
+    }
+    .footer__copyright {
+        display: none;
+    }
+    .footer__paragraph {
+        margin: 29px 0;
+    }
+}
